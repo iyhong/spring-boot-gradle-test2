@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 
 @RunWith(SpringRunner.class)
-@WebMvcTest
+@WebMvcTest(HelloController.class)
 public class HelloControllerTest {
 
     @Autowired
@@ -26,6 +26,7 @@ public class HelloControllerTest {
     @Test
     public void hello가_리턴된다 () throws Exception {
         mvc.perform(get("/hello"))
+
                 .andExpect(status().isOk())
                 .andExpect(content().string("hello"));
     }
