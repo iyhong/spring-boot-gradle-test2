@@ -7,6 +7,7 @@ import com.hong.springboot.domain.posts.PostsRepository;
 import com.hong.springboot.service.PostsService;
 import com.hong.springboot.web.dto.PostsResponseDto;
 import com.hong.springboot.web.dto.PostsSaveRequestDto;
+import com.hong.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,6 +19,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.json.JacksonTester;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -70,6 +72,36 @@ public class PostsApiControllerTest {
 //                .apply(springSecurity())
                 .build();
     }
+
+    @Test
+    public void posts_수정된다() {
+        // given
+        Posts savedPosts = postsRepository.save(Posts.builder()
+                .title("title")
+                .content("content")
+                .author("inyong")
+                .build()
+        );
+
+        Long updateId = savedPosts.getId();
+        String expectedTitle = "title2";
+        String expectedContent = "content2";
+
+        PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder()
+                .title(expectedTitle)
+                .content(expectedContent)
+                .build();
+        HttpEntity<PostsUpdateRequestDto> requestDtoHttpEntity = new HttpEntity<>(requestDto);
+        String url = "http://localhost:"+ port + "/api/v1/posts/"+ updateId;
+        ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestDtoHttpEntity, Long.class);
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(responseEntity.getBody()).isGreaterThan(0L);
+
+        PostsResponseDto responseEntity1 = restTemplate.getForObject(url+"/{id}", PostsResponseDto.class, updateId);
+        assertThat(responseEntity1.getTitle()).isEqualTo(expectedTitle);
+        assertThat(responseEntity1.getContent()).isEqualTo(expectedContent);
+    }
+
     @Test
     public void posts_조회된다 () throws Exception {
         String title = "title";

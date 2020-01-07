@@ -4,6 +4,7 @@ import com.hong.springboot.domain.posts.Posts;
 import com.hong.springboot.service.PostsService;
 import com.hong.springboot.web.dto.PostsResponseDto;
 import com.hong.springboot.web.dto.PostsSaveRequestDto;
+import com.hong.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,5 +23,10 @@ public class PostsApiController {
     @PostMapping("/api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestDto){
         return postsService.save(requestDto);
+    }
+
+    @PutMapping("/api/v1/posts/{id}")
+    public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto){
+        return postsService.update(id, requestDto);
     }
 }
