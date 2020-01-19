@@ -1,5 +1,6 @@
 package com.hong.springboot;
 
+import com.hong.springboot.domain.user.Role;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
