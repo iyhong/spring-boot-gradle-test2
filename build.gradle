@@ -39,7 +39,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
-
+    compile('org.mariadb.jdbc:mariadb-java-client')
 
     //
     compile('com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6')
