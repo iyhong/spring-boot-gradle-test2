@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.hong.springboot.domain.posts.PostsRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.hong.springboot.domain.posts.PostsRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.hong.springboot.domain.posts.html">com.hong.springboot.domain.posts</a> &gt; PostsRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.039s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">BaseTimeEntity_등록</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">게시글저장_불러오기</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2020-01-26 16:17:09.543  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hong.springboot.domain.posts.PostsRepositoryTest], using SpringBootContextLoader
+2020-01-26 16:17:09.544  INFO 6132 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hong.springboot.domain.posts.PostsRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-26 16:17:09.544  INFO 6132 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hong.springboot.domain.posts.PostsRepositoryTest]: PostsRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-26 16:17:09.552  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.hong.springboot.Application for test class com.hong.springboot.domain.posts.PostsRepositoryTest
+2020-01-26 16:17:09.554  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-26 16:17:09.555  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45cdbf49, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@38e5646c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@48f6c50e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2cae7fdb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b1baf0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1764780e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69c41159, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@36cbeb1d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@3f24b10e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@bb40aec, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@42b38c1a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b490452, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@317f7cf4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ab7f35d]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2020-01-26 16:17:09.594  INFO 6132 --- [    Test worker] c.h.s.domain.posts.PostsRepositoryTest   : Starting PostsRepositoryTest on Inyongui-MacBook-Pro-2.local with PID 6132 (started by inyonghong in /Users/inyonghong/Documents/spring_study/spring-boot-gradle-test2)
+2020-01-26 16:17:09.595  INFO 6132 --- [    Test worker] c.h.s.domain.posts.PostsRepositoryTest   : No active profile set, falling back to default profiles: default
+2020-01-26 16:17:09.809  INFO 6132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-26 16:17:09.828  INFO 6132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 2 repository interfaces.
+2020-01-26 16:17:09.930  INFO 6132 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cd5709a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-26 16:17:09.993  INFO 6132 --- [    Test worker] c.g.g.b.j.d.p6spy.P6SpyConfiguration     : P6Spy modulelist is overridden, some p6spy configuration features will not be applied
+2020-01-26 16:17:10.031  INFO 6132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-01-26 16:17:10.032  INFO 6132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-01-26 16:17:10.048  INFO 6132 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-26 16:17:10.057  INFO 6132 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Hibernate: drop table if exists posts
+2020-01-26 16:17:10.107  INFO 6132 --- [    Test worker] p6spy                                    : #1580023030107 | took 9ms | statement | connection 25| url jdbc:h2:mem:testdb
+drop table if exists posts
+drop table if exists posts;
+Hibernate: drop table if exists user
+2020-01-26 16:17:10.109  INFO 6132 --- [    Test worker] p6spy                                    : #1580023030109 | took 1ms | statement | connection 25| url jdbc:h2:mem:testdb
+drop table if exists user
+drop table if exists user;
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+2020-01-26 16:17:10.113  INFO 6132 --- [    Test worker] p6spy                                    : #1580023030113 | took 2ms | statement | connection 26| url jdbc:h2:mem:testdb
+create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB;
+Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
+2020-01-26 16:17:10.116  INFO 6132 --- [    Test worker] p6spy                                    : #1580023030116 | took 1ms | statement | connection 26| url jdbc:h2:mem:testdb
+create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
+create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB;
+2020-01-26 16:17:10.117  INFO 6132 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@413a28c3'
+2020-01-26 16:17:10.118  INFO 6132 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-26 16:17:10.284  INFO 6132 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-26 16:17:10.417  INFO 6132 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e370216, org.springframework.security.web.context.SecurityContextPersistenceFilter@68e3627f, org.springframework.security.web.header.HeaderWriterFilter@532db57f, org.springframework.security.web.authentication.logout.LogoutFilter@1639fd6a, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4980309f, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@767bd08e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@65ba8b38, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@26be7390, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61db773c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f63b035, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44d127da, org.springframework.security.web.session.SessionManagementFilter@4c7ec3b2, org.springframework.security.web.access.ExceptionTranslationFilter@5dfa9976, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a101052]
+2020-01-26 16:17:10.681  INFO 6132 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-26 16:17:10.702  WARN 6132 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-26 16:17:10.757  INFO 6132 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-26 16:17:11.100  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031100 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+CREATE TABLE SPRING_SESSION ( PRIMARY_ID CHAR(36) NOT NULL, SESSION_ID CHAR(36) NOT NULL, CREATION_TIME BIGINT NOT NULL, LAST_ACCESS_TIME BIGINT NOT NULL, MAX_INACTIVE_INTERVAL INT NOT NULL, EXPIRY_TIME BIGINT NOT NULL, PRINCIPAL_NAME VARCHAR(100), CONSTRAINT SPRING_SESSION_PK PRIMARY KEY (PRIMARY_ID) )
+CREATE TABLE SPRING_SESSION ( PRIMARY_ID CHAR(36) NOT NULL, SESSION_ID CHAR(36) NOT NULL, CREATION_TIME BIGINT NOT NULL, LAST_ACCESS_TIME BIGINT NOT NULL, MAX_INACTIVE_INTERVAL INT NOT NULL, EXPIRY_TIME BIGINT NOT NULL, PRINCIPAL_NAME VARCHAR(100), CONSTRAINT SPRING_SESSION_PK PRIMARY KEY (PRIMARY_ID) );
+2020-01-26 16:17:11.101  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031101 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+CREATE UNIQUE INDEX SPRING_SESSION_IX1 ON SPRING_SESSION (SESSION_ID)
+CREATE UNIQUE INDEX SPRING_SESSION_IX1 ON SPRING_SESSION (SESSION_ID);
+2020-01-26 16:17:11.101  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031101 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+CREATE INDEX SPRING_SESSION_IX2 ON SPRING_SESSION (EXPIRY_TIME)
+CREATE INDEX SPRING_SESSION_IX2 ON SPRING_SESSION (EXPIRY_TIME);
+2020-01-26 16:17:11.102  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031102 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+CREATE INDEX SPRING_SESSION_IX3 ON SPRING_SESSION (PRINCIPAL_NAME)
+CREATE INDEX SPRING_SESSION_IX3 ON SPRING_SESSION (PRINCIPAL_NAME);
+2020-01-26 16:17:11.102  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031102 | took 0ms | statement | connection 31| url jdbc:h2:mem:testdb
+CREATE TABLE SPRING_SESSION_ATTRIBUTES ( SESSION_PRIMARY_ID CHAR(36) NOT NULL, ATTRIBUTE_NAME VARCHAR(200) NOT NULL, ATTRIBUTE_BYTES LONGVARBINARY NOT NULL, CONSTRAINT SPRING_SESSION_ATTRIBUTES_PK PRIMARY KEY (SESSION_PRIMARY_ID, ATTRIBUTE_NAME), CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION(PRIMARY_ID) ON DELETE CASCADE )
+CREATE TABLE SPRING_SESSION_ATTRIBUTES ( SESSION_PRIMARY_ID CHAR(36) NOT NULL, ATTRIBUTE_NAME VARCHAR(200) NOT NULL, ATTRIBUTE_BYTES LONGVARBINARY NOT NULL, CONSTRAINT SPRING_SESSION_ATTRIBUTES_PK PRIMARY KEY (SESSION_PRIMARY_ID, ATTRIBUTE_NAME), CONSTRAINT SPRING_SESSION_ATTRIBUTES_FK FOREIGN KEY (SESSION_PRIMARY_ID) REFERENCES SPRING_SESSION(PRIMARY_ID) ON DELETE CASCADE );
+2020-01-26 16:17:11.163  INFO 6132 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020-01-26 16:17:11.165  INFO 6132 --- [    Test worker] c.h.s.domain.posts.PostsRepositoryTest   : Started PostsRepositoryTest in 1.606 seconds (JVM running for 11.971)
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2020-01-26 16:17:11.182  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031182 | took 0ms | statement | connection 32| url jdbc:h2:mem:testdb
+insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+insert into posts (created_date, modified_date, author, content, title) values ('2020-01-26T16:17:11.178+0900', '2020-01-26T16:17:11.178+0900', 'test@gmail.com', 'content', 'title');
+2020-01-26 16:17:11.184  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031184 | took 0ms | commit | connection 32| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:11.188  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031188 | took 0ms | statement | connection 33| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2020-01-26 16:17:11.190  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031190 | took 0ms | commit | connection 33| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:11.192  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031192 | took 0ms | statement | connection 34| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2020-01-26 16:17:11.193  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031193 | took 0ms | statement | connection 34| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=1;
+2020-01-26 16:17:11.194  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031194 | took 0ms | commit | connection 34| url jdbc:h2:mem:testdb
+
+;
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2020-01-26 16:17:11.199  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031199 | took 0ms | statement | connection 35| url jdbc:h2:mem:testdb
+insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+insert into posts (created_date, modified_date, author, content, title) values ('2020-01-26T16:17:11.198+0900', '2020-01-26T16:17:11.198+0900', 'author', 'content', 'title');
+2020-01-26 16:17:11.200  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031200 | took 0ms | commit | connection 35| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:11.201  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031201 | took 0ms | statement | connection 36| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2020-01-26 16:17:11.203  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031203 | took 0ms | commit | connection 36| url jdbc:h2:mem:testdb
+
+;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; createDate:2020-01-26T16:17:11.198, modifyDate:2020-01-26T16:17:11.198
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:11.204  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031204 | took 0ms | statement | connection 37| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2020-01-26 16:17:11.206  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031206 | took 0ms | statement | connection 37| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=2;
+2020-01-26 16:17:11.206  INFO 6132 --- [    Test worker] p6spy                                    : #1580023031206 | took 0ms | commit | connection 37| url jdbc:h2:mem:testdb
+
+;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2020. 1. 26 오후 4:17:11</p>
+</div>
+</div>
+</body>
+</html>

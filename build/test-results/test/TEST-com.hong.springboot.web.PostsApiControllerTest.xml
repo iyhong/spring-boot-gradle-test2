@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hong.springboot.web.PostsApiControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-26T07:17:09" hostname="Inyongui-MacBook-Pro-2.local" time="0.284">
+  <properties/>
+  <testcase name="posts_등록된다" classname="com.hong.springboot.web.PostsApiControllerTest" time="0.202"/>
+  <testcase name="posts_수정된다" classname="com.hong.springboot.web.PostsApiControllerTest" time="0.045"/>
+  <testcase name="posts_조회된다" classname="com.hong.springboot.web.PostsApiControllerTest" time="0.035"/>
+  <system-out><![CDATA[2020-01-26 16:17:09.229  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hong.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
+2020-01-26 16:17:09.229  INFO 6132 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.hong.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-01-26 16:17:09.229  INFO 6132 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.hong.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-01-26 16:17:09.231  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.hong.springboot.Application for test class com.hong.springboot.web.PostsApiControllerTest
+2020-01-26 16:17:09.231  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-01-26 16:17:09.232  INFO 6132 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7970312e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@584e8f1f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6932bc63, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1cdb7f2d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64dad4d9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48c0992a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34ede5f5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7388c652, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4146b8e6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@d03702d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@561afe35, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@631508f2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@17e00dfe, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1749537]
+2020-01-26 16:17:09.240  INFO 6132 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-01-26 16:17:09.241  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-26 16:17:09.244  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2020-01-26 16:17:09.382  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029382 | took 1ms | statement | connection 12| url jdbc:h2:mem:testdb
+insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+insert into posts (created_date, modified_date, author, content, title) values ('2020-01-26T16:17:09.355+0900', '2020-01-26T16:17:09.355+0900', 'test@gmail.com', 'content', 'title');
+2020-01-26 16:17:09.388  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029388 | took 0ms | commit | connection 12| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:09.405  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029405 | took 0ms | statement | connection 13| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2020-01-26 16:17:09.409  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029409 | took 0ms | commit | connection 13| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:09.412  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029412 | took 0ms | statement | connection 14| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2020-01-26 16:17:09.431  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029431 | took 1ms | statement | connection 14| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=1;
+2020-01-26 16:17:09.434  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029434 | took 0ms | commit | connection 14| url jdbc:h2:mem:testdb
+
+;
+2020-01-26 16:17:09.441  INFO 6132 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-01-26 16:17:09.441  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-26 16:17:09.444  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2020-01-26 16:17:09.446  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029446 | took 0ms | statement | connection 15| url jdbc:h2:mem:testdb
+insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+insert into posts (created_date, modified_date, author, content, title) values ('2020-01-26T16:17:09.445+0900', '2020-01-26T16:17:09.445+0900', 'inyong', 'content', 'title');
+2020-01-26 16:17:09.447  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029447 | took 0ms | commit | connection 15| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+2020-01-26 16:17:09.459  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029459 | took 0ms | statement | connection 16| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=2;
+Hibernate: update posts set created_date=?, modified_date=?, author=?, content=?, title=? where id=?
+2020-01-26 16:17:09.473  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029473 | took 0ms | statement | connection 16| url jdbc:h2:mem:testdb
+update posts set created_date=?, modified_date=?, author=?, content=?, title=? where id=?
+update posts set created_date='2020-01-26T16:17:09.445+0900', modified_date='2020-01-26T16:17:09.468+0900', author='inyong', content='content2', title='title2' where id=2;
+2020-01-26 16:17:09.474  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029474 | took 0ms | commit | connection 16| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:09.477  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029477 | took 0ms | statement | connection 17| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+2020-01-26 16:17:09.479  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029479 | took 0ms | commit | connection 17| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:09.480  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029480 | took 0ms | statement | connection 18| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2020-01-26 16:17:09.481  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029481 | took 0ms | statement | connection 18| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=2;
+2020-01-26 16:17:09.482  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029482 | took 0ms | commit | connection 18| url jdbc:h2:mem:testdb
+
+;
+2020-01-26 16:17:09.487  INFO 6132 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2020-01-26 16:17:09.487  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2020-01-26 16:17:09.490  INFO 6132 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2020-01-26 16:17:09.495  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029495 | took 0ms | statement | connection 19| url jdbc:h2:mem:testdb
+insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+insert into posts (created_date, modified_date, author, content, title) values ('2020-01-26T16:17:09.494+0900', '2020-01-26T16:17:09.494+0900', NULL, 'content', 'title');
+2020-01-26 16:17:09.496  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029496 | took 0ms | commit | connection 19| url jdbc:h2:mem:testdb
+
+;
+Hibernate: select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+2020-01-26 16:17:09.500  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029500 | took 0ms | statement | connection 20| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=3;
+2020-01-26 16:17:09.501  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029501 | took 0ms | commit | connection 20| url jdbc:h2:mem:testdb
+
+;
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/posts/3
+       Parameters = {}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=org.springframework.security.core.context.SecurityContextImpl@ca25360: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@ca25360: Principal: org.springframework.security.core.userdetails.User@36ebcb: Username: user; Password: [PROTECTED]; Enabled: true; AccountNonExpired: true; credentialsNonExpired: true; AccountNonLocked: true; Granted Authorities: ROLE_USER; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER}
+
+Handler:
+             Type = com.hong.springboot.web.PostsApiController
+           Method = public com.hong.springboot.web.dto.PostsResponseDto com.hong.springboot.web.PostsApiController.findById(java.lang.Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8", X-Content-Type-Options:"nosniff", X-XSS-Protection:"1; mode=block", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0"]
+     Content type = application/json;charset=UTF-8
+             Body = {"id":3,"title":"title","content":"content","author":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2020-01-26 16:17:09.511  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029511 | took 0ms | statement | connection 21| url jdbc:h2:mem:testdb
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_;
+Hibernate: delete from posts where id=?
+2020-01-26 16:17:09.514  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029514 | took 0ms | statement | connection 21| url jdbc:h2:mem:testdb
+delete from posts where id=?
+delete from posts where id=3;
+2020-01-26 16:17:09.516  INFO 6132 --- [    Test worker] p6spy                                    : #1580023029516 | took 0ms | commit | connection 21| url jdbc:h2:mem:testdb
+
+;
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

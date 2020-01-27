@@ -1,0 +1,4 @@
+1580020085421|105|statement|connection 33|url jdbc:h2:mem:testdb|drop table if exists posts|drop table if exists posts
+1580020085422|0|statement|connection 33|url jdbc:h2:mem:testdb|drop table if exists user|drop table if exists user
+1580020735801|102|statement|connection 33|url jdbc:h2:mem:testdb|drop table if exists posts|drop table if exists posts
+1580020735805|0|statement|connection 33|url jdbc:h2:mem:testdb|drop table if exists user|drop table if exists user
